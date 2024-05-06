@@ -35,27 +35,28 @@
   
   "experience": [
     {
-      "title": "Frontend Developer",
-      "company": "ABC Company",
-      "logo": "path/to/company-logo1.png",
-      "description": "Developed responsive and user-friendly web applications using HTML, CSS, and JavaScript. Collaborated with designers and backend developers to implement new features and optimize existing code.",
-      "date": "January 2020 - Present"
-    },
-    {
-      "title": "UI/UX Designer",
-      "company": "XYZ Agency",
-      "logo": "path/to/company-logo2.png",
-      "description": "Designed and prototyped intuitive user interfaces for various digital products. Conducted user research, created wireframes and mockups, and collaborated with developers to ensure design feasibility.",
-      "date": "June 2018 - December 2019"
-    },
-    {
-      "title": "Full Stack Developer",
-      "company": "123 Corporation",
-      "logo": "path/to/company-logo3.png",
-      "description": "Built scalable and efficient web applications using Node.js, Express, and MongoDB. Implemented RESTful APIs, optimized database performance, and integrated third-party services.",
-      "date": "March 2016 - May 2018"
+      "company": "Tiger Analytics",
+      "companyLogo": "img/tiger_analytics_logo.jpg",
+      "roles": [
+        {
+          "position": "Senior Engineer",
+          "date": "July 2023 - Present",
+          "location": "Bangalore, Karnataka, India"
+        },
+        {
+          "position": "Engineer",
+          "date": "September 2022 - June 2023 ",
+          "location": "Bangalore, Karnataka, India"
+        },
+        {
+          "position": "Web Developer Intern",
+          "date": "March 2022 - August 2022",
+          "location": "Chennai, Tamilnadu, India"
+        }
+      ]
     }
   ],
+  
   
   
   "portfolio": [

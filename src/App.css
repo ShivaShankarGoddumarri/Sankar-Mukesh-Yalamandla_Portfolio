@@ -232,149 +232,15 @@ h2 {
 }
 /* Hero Section Style Ends */
 
-/* Skills Section Style */
-.skills--section {
-  display: flex;
-  padding: 149.33px 85.33px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 106.667px;
-}
-.skills--section--heading {
-  color: var(--heading-color);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px;
-}
-.skills--section--container {
-  display: grid;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 42.6px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.skills--section--card {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-  border-radius: 10.6px;
-  background: var(--bg-shade);
-  min-height: 250px;
-}
-.skills--section--card:hover {
-  border-bottom: 4px solid var(--primary);
-}
-.skills--section--card:hover .skills--section--description {
-  color: var(--darkblue);
-}
-.skills--section--img {
-  display: flex;
-  padding: 13.3px;
-  justify-content: center;
-  align-items: center;
-  gap: 13.3px;
-  border-radius: 10.6px;
-  background: #fff;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-}
-.skills--section--card--content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.skills--section--title {
-  color: var(--heading-color);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 45px;
-}
-.skills--section--skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-.skills--section--skill {
-  border: 1px solid var(--border);
-  font-size: 14px;
-  padding: 4px;
-  border-radius: 5px;
-  margin-right: 10px; 
-  margin-bottom: 10px; 
-}
-.skills--section--description {
-  color: var(--black);
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-/* Skills Style Ends */
 
-/* Experience Section */
-.experience--section {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
 
-.experience--section--content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .section--title {
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
-}
-
-.experience--section--heading {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-.experience--section--card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.experience--section--title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
   margin-bottom: 10px;
 }
-
-.experience--section--position {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.experience--section--description {
-  font-size: 16px;
-  color: #777;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.experience--section--date {
-  font-size: 14px;
-  color: #999;
-}
-
-/* Experience Section Ends */
-
 /* My Portfolio Starts */
 .portfolio--section {
   display: flex;

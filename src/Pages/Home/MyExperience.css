@@ -1,0 +1,113 @@
+
+.experience--section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .experience--section--content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  
+  .experience--section--heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .company--header {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+  
+  .company--logo img {
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
+    margin-right: 20px;
+  }
+  
+  .company--details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .company--name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0px;
+  }
+  
+  .company--type {
+    font-size: 14px;
+    color: #777;
+    margin-top: 0px;
+  }
+  
+  .roles--timeline {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  
+  .role--item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline--dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(211, 211, 211, 0.77);
+    margin-right: 10px;
+    margin-left: -15px; 
+    margin-bottom: 50px;
+  }
+  
+  .timeline--line {
+    width: 2px;
+    height: 90px;
+    background-color: rgba(211, 211, 211, 0.77);
+    position: absolute;
+    left: -11px;
+    top: 60%; 
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .role--info {
+    flex: 1;
+    margin-left: 35px;
+  }
+  
+  .role--position {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .role--date, .role--location {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  .role--description {
+    flex: 4;
+  }
+  
+  .role--description p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+ 
