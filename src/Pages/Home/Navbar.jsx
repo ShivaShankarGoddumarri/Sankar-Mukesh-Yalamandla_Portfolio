@@ -110,12 +110,12 @@ function Navbar() {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-100}
               duration={500}
-              to="testimonial"
+              to="education"
               className="navbar--content"
             >
-              Testimonials
+              Education
             </Link>
           </li>
         </ul>

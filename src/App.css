@@ -20,6 +20,8 @@ h3 {
   --black: #000000;
   --white: #ffffff;
   --border: #5f3bee81;
+  --secondary: #006b6a;
+
 }
 .btn {
   font-family: "Nunito", sans-serif;
@@ -132,7 +134,7 @@ h2 {
   text-align: center;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 36px;
   display: flex;
   align-items: flex-start;
 }
