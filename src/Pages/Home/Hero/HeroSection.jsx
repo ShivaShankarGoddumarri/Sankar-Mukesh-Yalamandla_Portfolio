@@ -1,3 +1,4 @@
+import "./HeroSection.css";
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">

@@ -1,3 +1,4 @@
+import "./Contact.css";
 export default function ContactMe() {
   return (
     <section id="Contact" className="contact--section">

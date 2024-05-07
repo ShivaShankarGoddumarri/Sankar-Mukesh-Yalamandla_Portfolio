@@ -1,12 +1,13 @@
-import data from "../../data/index.json";
+import data from "../../../data/index.json";
+import "./MyProjects.css";
 
-export default function MyPortfolio() {
+export default function MyProjects() {
   return (
-    <section className="portfolio--section" id="MyPortfolio">
+    <section className="portfolio--section" id="MyProjects">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <h2 className="section--heading">My Projects</h2>
         </div>
         <div>
           <button className="btn btn-github">

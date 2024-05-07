@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -30,10 +31,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="MyPortfolio"
+                to="mySkills"
                 className="text-md"
               >
-                Portfolio
+             Skills
               </Link>
             </li>
             <li>
@@ -43,10 +44,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="AboutMe"
+                to="Experience"
                 className="text-md"
               >
-                About Me
+                Experience
               </Link>
             </li>
             <li>
@@ -56,10 +57,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
+                to="MyProjects"
                 className="text-md"
               >
-                Contact
+               Projects
               </Link>
             </li>
             <li>
@@ -69,10 +70,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="education"
                 className="text-md"
               >
-                Testimonials
+                Education
               </Link>
             </li>
           </ul>

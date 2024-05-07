@@ -1,8 +1,8 @@
-import React from 'react';
-import data from "../../data/index.json";
-import "./MyExperience.css"
+import React from "react";
+import data from "../../../data/index.json";
+import "./MyExperience.css";
 
-export default function Experience() {
+export default function MyExperience() {
   return (
     <section id="Experience" className="experience--section">
       <div className="experience--section--content">
@@ -23,7 +23,9 @@ export default function Experience() {
               {company.roles.map((role, roleIndex) => (
                 <div key={roleIndex} className="role--item">
                   <div className="timeline--dot"></div>
-                  {roleIndex < company.roles.length - 1 && <div className="timeline--line"></div>}
+                  {roleIndex < company.roles.length - 1 && (
+                    <div className="timeline--line"></div>
+                  )}
                   <div className="role--info">
                     <h3 className="role--position">{role.position}</h3>
                     <p className="role--date">{role.date}</p>

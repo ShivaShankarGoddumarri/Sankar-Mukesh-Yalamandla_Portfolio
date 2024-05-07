@@ -1,5 +1,5 @@
-import React from 'react';
-import data from "../../data/index.json";
+import React from "react";
+import data from "../../../data/index.json";
 import "./MySkills.css";
 
 export default function MySkills() {
@@ -17,10 +17,12 @@ export default function MySkills() {
             </div>
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>
-             
+
               <div className="skills--section--skills">
                 {item.skill.map((skill, skillIndex) => (
-                  <span key={skillIndex} className="skills--section--skill">{skill}</span>
+                  <span key={skillIndex} className="skills--section--skill">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
