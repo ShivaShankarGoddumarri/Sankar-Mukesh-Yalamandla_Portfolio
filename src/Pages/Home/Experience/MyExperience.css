@@ -1,6 +1,6 @@
 
 .experience--section {
-    padding: 60px 0;
+    padding: 100px 0px;
     background-color: #f9f9f9;
   }
   
@@ -95,19 +95,11 @@
   }
   
   .role--date, .role--location {
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
     margin-bottom: 5px;
   }
   
-  .role--description {
-    flex: 4;
-  }
-  
-  .role--description p {
-    font-size: 16px;
-    color: #777;
-    line-height: 1.6;
-  }
+
   
  

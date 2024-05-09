@@ -21,10 +21,14 @@
   .navbar--items ul > li > a {
     text-decoration: none;
   }
+  .logo--container img{
+    width: 200px;
+    height: auto;
+  }
   /* Navbar Content */
   .navbar--content {
     color: var(--darkblue);
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -32,6 +36,7 @@
   }
   .navbar--active-content {
     color: var(--primary);
+    font-weight: 600;
   }
   /* Hamburger menu  */
 

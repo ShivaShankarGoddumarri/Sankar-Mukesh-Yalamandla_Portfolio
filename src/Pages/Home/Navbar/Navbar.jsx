@@ -35,8 +35,8 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+      <div className="logo--container">
+        <img src="./img/logo.png" alt="Logoipsum" />
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -111,7 +111,7 @@ function Navbar() {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-70}
               duration={500}
               to="education"
               className="navbar--content"

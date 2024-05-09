@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../../../data/index.json";
 import "./MySkills.css";
 
 export default function MySkills() {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+  const handleCardHover = (index) => {
+    setHoveredCard(index);
+  };
+
+  const handleCardLeave = () => {
+    setHoveredCard(null);
+  };
+
   return (
     <section className="skills--section" id="mySkills">
       <div className="portfolio--container">
@@ -11,7 +21,14 @@ export default function MySkills() {
       </div>
       <div className="skills--section--container">
         {data?.skills?.map((item, index) => (
-          <div key={index} className="skills--section--card">
+          <div
+            key={index}
+            className={`skills--section--card ${
+              hoveredCard === index ? "skeleton" : ""
+            }`}
+            onMouseEnter={() => handleCardHover(index)}
+            onMouseLeave={handleCardLeave}
+          >
             <div className="skills--section--img">
               <img src={item.src} alt="Skill Icon" />
             </div>
