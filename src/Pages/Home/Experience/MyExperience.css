@@ -82,6 +82,12 @@
     margin: auto;
   }
   
+  .first-role-dot {
+    background-color: var(--primary);
+    width: 12px;
+    height: 12px; 
+  }
+  
   .role--info {
     flex: 1;
     margin-left: 35px;

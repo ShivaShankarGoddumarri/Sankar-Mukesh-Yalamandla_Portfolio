@@ -38,6 +38,37 @@
   .skills--section--card:hover .skills--section--description {
     color: var(--darkblue);
   }
+  .skills--section--card.skeleton .skills--section--skill {
+    position: relative; /* Ensure position for pseudo-element */
+    overflow: hidden; /* Hide overflow to clip animation */
+    background-color: var( --light-border); /* Light gray background color */
+  }
+  
+  .skills--section--card.skeleton .skills--section--skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from left outside the span */
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      135deg,
+      transparent 25%,
+      rgba(255, 255, 255, 0.8) 40%,
+      transparent 50%
+    );
+    /* animation: spark-animation 1s infinite linear;  */
+    animation: spark-animation 1s linear forwards;
+  }
+  
+  @keyframes spark-animation {
+    0% {
+      left: -100%; /* Start from left outside the span */
+    }
+    100% {
+      left: 100%; /* Move to right outside the span */
+    }
+  }
   .skills--section--img {
     display: flex;
     padding: 13.3px;
@@ -80,35 +111,5 @@
     font-weight: 400;
     line-height: 12px;
   }
-  .skills--section--card.skeleton .skills--section--skill {
-    position: relative; /* Ensure position for pseudo-element */
-    overflow: hidden; /* Hide overflow to clip animation */
-    background-color: var( --light-border); /* Light gray background color */
-  }
-  
-  .skills--section--card.skeleton .skills--section--skill::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%; /* Start from left outside the span */
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      135deg,
-      transparent 25%,
-      rgba(255, 255, 255, 0.8) 40%,
-      transparent 50%
-    );
-    /* animation: spark-animation 1s infinite linear;  */
-    animation: spark-animation 1s linear forwards;
-  }
-  
-  @keyframes spark-animation {
-    0% {
-      left: -100%; /* Start from left outside the span */
-    }
-    100% {
-      left: 100%; /* Move to right outside the span */
-    }
-  }
+
   

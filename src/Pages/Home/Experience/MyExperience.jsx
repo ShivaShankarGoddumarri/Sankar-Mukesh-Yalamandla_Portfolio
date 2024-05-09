@@ -22,7 +22,7 @@ export default function MyExperience() {
             <div className="roles--timeline">
               {company.roles.map((role, roleIndex) => (
                 <div key={roleIndex} className="role--item">
-                  <div className="timeline--dot"></div>
+                  <div className={`timeline--dot ${roleIndex === 0 ? 'first-role-dot' : ''}`}></div>
                   {roleIndex < company.roles.length - 1 && (
                     <div className="timeline--line"></div>
                   )}
