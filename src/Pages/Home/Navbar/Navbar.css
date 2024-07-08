@@ -40,7 +40,7 @@
 }
 
 .navbar-contact-content{
-  color: var(--white);
+  color: var(--white) !important;
   background-color: var(--primary);
   border: 1px solid var(--primary);
   padding: 10px;
