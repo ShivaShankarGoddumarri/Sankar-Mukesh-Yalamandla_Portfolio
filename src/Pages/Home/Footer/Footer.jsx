@@ -80,7 +80,7 @@ function Footer() {
         </div>
         <div className="footer--social--icon">
           <ul>
-            <li class="socialMedia--btn" title="Whatsapp">
+            {/* <li class="socialMedia--btn" title="Whatsapp">
               <a
                 href="https://wa.me/9912114088"
                 className="navbar--content"
@@ -101,7 +101,7 @@ function Footer() {
                   ></path>
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li class="socialMedia--btn" title="LinkedIn">
               <a
                 href="https://www.linkedin.com/in/sankar-mukesh-yalamandla-2b0946199/"
