@@ -1,10 +1,10 @@
 
 .portfolio--section {
     display: flex;
-    padding: 112px 85px;
+    padding: 30px 85px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 80px;
+    /* gap: 80px; */
   }
   .portfolio--container-box {
     display: flex;
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 21.3px;
+    /* gap: 21.3px; */
   }
   .portfolio--section--container {
     display: flex;

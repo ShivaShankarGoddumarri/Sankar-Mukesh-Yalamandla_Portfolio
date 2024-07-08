@@ -135,7 +135,7 @@ h3 {
   text-align: center;
   font-style: normal;
   font-weight: 600;
-  line-height: 36px;
+  /* line-height: 36px; */
   display: flex;
   align-items: flex-start;
 }
