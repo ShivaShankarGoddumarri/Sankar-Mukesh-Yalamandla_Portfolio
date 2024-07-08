@@ -1,7 +1,25 @@
+import { useState } from "react";
 import data from "../../../data/index.json";
 import "./MyProjects.css";
 
 export default function MyProjects() {
+
+  const [showGithubLinks, setShowGithubLinks] = useState(
+    Array(data?.portfolio?.length).fill(false)
+  );
+
+  const toggleGithubLinks = (index) => {
+    setShowGithubLinks((prev) =>
+      prev.map((show, idx) => (idx === index ? !show : show))
+    );
+  };
+
+  const handleAppClick = (website) => {
+    if (website) {
+      window.open(website, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <section className="portfolio--section" id="MyProjects">
       <div className="portfolio--container-box">
@@ -35,38 +53,64 @@ export default function MyProjects() {
         </div>
       </div>
       <div className="portfolio--section--container">
-        {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
-            </div>
-            <div className="portfolio--section--card--content">
-              <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
-              </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
+      {data?.portfolio?.map((item, index) => (
+        <div key={index} className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src={item.src} alt={item.title} />
           </div>
-        ))}
-      </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">{item.title}</h3>
+              <p className="text-md">{item.description}</p>
+            </div>
+            <div className="buttons-container">
+              <button
+                onClick={() => toggleGithubLinks(index)}
+                className="btn--github"
+              >
+                {!showGithubLinks[index] ? 'Show GitHub Links' : 'Close Links'}
+              </button>
+              <button
+                className="btn--live"
+                onClick={() => handleAppClick(item.website)}
+              >
+                App
+              </button>
+            </div>
+            {showGithubLinks[index] && item?.githubLinks && item?.githubLinks?.length > 0 && (
+              <div className="portfolio--links">
+                {item?.githubLinks?.map((link, idx) => (
+                  <a
+                    key={idx}
+                    href={link.link}
+                    className="text-sm portfolio--link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.name}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                    >
+                      <path
+                        d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                        stroke="currentColor"
+                        strokeWidth="2.66667"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
     </section>
   );
 }

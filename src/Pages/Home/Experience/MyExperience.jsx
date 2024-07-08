@@ -8,7 +8,7 @@ export default function MyExperience() {
       <div className="experience--section--content">
         <p className="section--title">Experience</p>
         <h2 className="experience--section--heading">My Work Experience</h2>
-        {data?.experience?.map((company, index) => (
+        {data?.experience?.sort((a,b)=> +b["CompanyOrder"]-+a["CompanyOrder"]).map((company, index) => (
           <div key={index} className="experience--section--company">
             <div className="company--header">
               <div className="company--logo">
@@ -22,7 +22,7 @@ export default function MyExperience() {
             <div className="roles--timeline">
               {company.roles.map((role, roleIndex) => (
                 <div key={roleIndex} className="role--item">
-                  <div className={`timeline--dot ${roleIndex === 0 ? 'first-role-dot' : ''}`}></div>
+                  <div className={`timeline--dot ${(roleIndex === 0 && index == 0) ? 'first-role-dot' : ''}`}></div>
                   {roleIndex < company.roles.length - 1 && (
                     <div className="timeline--line"></div>
                   )}

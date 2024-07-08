@@ -24,7 +24,7 @@
       "id": "3",
       "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4em' height='4em' viewBox='0 0 24 24'%3E%3Cpath fill='%23006B6A' d='M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-10 9H9v1.5c0 1.1-.9 2-2 2c1.1 0 2 .9 2 2V18h2v2H9c-1.1 0-2-.9-2-2v-.5c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V11c0-1.1.9-2 2-2h2zm8 4.5c-1.1 0-2 .9-2 2v.5c0 1.1-.9 2-2 2h-2v-2h2v-1.5c0-1.1.9-2 2-2c-1.1 0-2-.9-2-2V11h-2V9h2c1.1 0 2 .9 2 2v.5c0 1.1.9 2 2 2zM21 7H3V4h18z'/%3E%3C/svg%3E"
       ,
-      "title": "Programming Languages",
+      "title": "Programming",
       "skill": ["C","Javascript", "Python"]
     },
    
@@ -48,6 +48,7 @@
     {
       "company": "Tiger Analytics",
       "companyLogo": "img/tiger_analytics_logo.jpg",
+      "CompanyOrder": "1",
       "roles": [
         {
           "position": "Senior Engineer",
@@ -65,32 +66,53 @@
           "location": "Chennai, Tamilnadu, India"
         }
       ]
+
     }
   ],
 
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/FSD.png",
+      "title": "FSD",
+      "description": "Effortlessly create and manage projects, assign tasks, and track progress to achieve your goals. Stay organized and monitor your team's task status and completion with ease.",
+      "website": "https://fsd-frontend.vercel.app/",
+      "githubLinks": [
+        { "name": "Frontend Repository", "link": "https://github.com/Sankarmukesh/FSD_Frontend" },
+        { "name": "Backend Repository", "link": "https://github.com/Sankarmukesh/FSD_backend" },
+        { "name": "Socket Repository", "link": "https://github.com/Sankarmukesh/FSD_Socket" }
+      ]
     },
+
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
       "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "website": "https://github.com/user/appone-frontend",
+      "githubLinks": [
+        { "name": "Frontend Repository", "link": "https://github.com/user/appone-frontend" }
+      ]
     },
+
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Easy Renturn",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "website": "https://github.com/user/appone-frontend",
+      "githubLinks": [
+        { "name": "Frontend Repository", "link": "https://github.com/user/appone-frontend" },
+        { "name": "Backend Repository", "link": "https://github.com/user/appone-backend" },
+        { "name": "Socket Repository", "link": "https://github.com/user/appone-backend" }
+
+      ]
     }
   ],
+
+
+ 
+
 
   "education": [
     {

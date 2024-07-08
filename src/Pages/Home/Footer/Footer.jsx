@@ -6,9 +6,9 @@ function Footer() {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
-      <div className="logo--container">
-        <img src="./img/logo.png" alt="Logoipsum" />
-      </div>
+        <div className="logo--container">
+          <img src="./img/logo.png" alt="Logoipsum" />
+        </div>
         <div className="footer--items">
           <ul>
             <li>
@@ -80,27 +80,7 @@ function Footer() {
         </div>
         <div className="footer--social--icon">
           <ul>
-            <li class="socialMedia--btn">
-              <a
-                href="mailto:ysankarmukesh@gmail.com"
-                className="navbar--content"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="red"
-                    d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="socialMedia--btn">
+            <li class="socialMedia--btn" title="Whatsapp">
               <a
                 href="https://wa.me/9912114088"
                 className="navbar--content"
@@ -119,9 +99,9 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li class="socialMedia--btn">
+            <li class="socialMedia--btn" title="LinkedIn">
               <a
-                  href="https://www.linkedin.com/in/sankar-mukesh-yalamandla-2b0946199/"
+                href="https://www.linkedin.com/in/sankar-mukesh-yalamandla-2b0946199/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -142,6 +122,67 @@ function Footer() {
                 </svg>
               </a>
             </li>
+            <li class="socialMedia--btn" title="Instagram">
+              <a
+                href="https://www.instagram.com/sanmuk25/?hl=en"
+                className="navbar--content"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#dc2626"
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socialMedia--btn" title="Telegram">
+              <a
+                href="https://t.me/+919912114088"
+                className="navbar--content"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+                    fill="#24A1DE"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="socialMedia--btn" title="facebook">
+              <a
+                href="https://www.facebook.com/sankar.royals.54/"
+                className="navbar--content"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                    fill="#4f46e5"
+                  />
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -151,43 +192,9 @@ function Footer() {
         <div className="footer--social--icon">
           <ul>
             <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Privacy_Policy"
-                className="text-sm"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Terms_of_Service"
-                className="text-sm"
-              >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Cookies_Settings"
-                className="text-sm"
-              >
-                Cookies Settings
-              </Link>
+              <div className="text-sm">
+                Copyright &copy; 2024 Sankar. All rights reserved.
+              </div>
             </li>
           </ul>
         </div>
