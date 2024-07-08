@@ -15,8 +15,8 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu;
+      if (window.innerWidth > 1200) {
+        closeMenu();
       }
     };
 
@@ -27,25 +27,19 @@ function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu;
-    }
-  }, []);
-
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="logo--container">
         <img src="./img/logo.png" alt="Logoipsum" />
       </div>
-      <a
+      <div
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
-      </a>
+      </div>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
@@ -73,10 +67,9 @@ function Navbar() {
               to="mySkills"
               className="navbar--content"
             >
-             Skills
+              Skills
             </Link>
           </li>
-         
           <li>
             <Link
               onClick={closeMenu}
@@ -88,7 +81,7 @@ function Navbar() {
               to="Experience"
               className="navbar--content"
             >
-             Experience
+              Experience
             </Link>
           </li>
           <li>
@@ -119,20 +112,24 @@ function Navbar() {
               Education
             </Link>
           </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Contact"
+              className="navbar-contact-content"
+              // className="btn btn-outline-primary"
+            >
+              Contact Me
+            </Link>
+          </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
     </nav>
   );
 }

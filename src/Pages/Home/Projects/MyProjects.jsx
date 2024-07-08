@@ -36,8 +36,8 @@ export default function MyProjects() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="3rem"
-              height="3rem"
+              width="2rem"
+              height="2rem"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -48,7 +48,7 @@ export default function MyProjects() {
                 fill="currentColor"
               />
             </svg>
-            Visit My GitHub
+           GitHub
           </a>
         </div>
       </div>

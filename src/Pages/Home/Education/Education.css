@@ -1,71 +1,116 @@
+/* Education Section Styles */
 .education--section {
-    padding: 30px 0;
-    background-color: #f9f9f9;
-    z-index: -1;
-  }
-  
-  .education--timeline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust gap as needed */
-    margin-top: 100px;
-  }
-  
+  padding: 30px 0;
+  background-color: #f9f9f9;
+  z-index: -1;
+}
+
+.education--timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap as needed */
+  margin-top: 100px;
+}
+
+.education--timeline--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1 0 calc(33.333% - 20px); /* Adjust width calculation */
+  max-width: calc(33.333% - 20px); /* Adjust max-width to maintain responsiveness */
+  margin-bottom: 20px; /* Add margin between items */
+}
+
+.timeline--line-horizontal {
+  width: calc(100% - 42px); /* Adjust this value based on icon width */
+  height: 4px;
+  background-color: var(--secondary);
+  position: absolute;
+  top: calc(50% - 110px); /* Adjust this value to center the line vertically */
+  left: 58%;
+  /* transform: translateX(-40%); */
+}
+
+.institution-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 4px solid var(--secondary);
+  padding: 5px;
+}
+
+.education--details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.education--institution--name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.education--degree {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.education--duration {
+  font-size: 16px;
+  color: #999;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
   .education--timeline--item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    flex: 1 0 calc(33.333% - 20px); /* Adjust width calculation */
-    max-width: calc(33.333% - 20px); /* Adjust max-width to maintain responsiveness */
-    margin-bottom: 20px; /* Add margin between items */
+    flex: 1 0 calc(50% - 20px); /* Adjust width for tablets and small laptops */
+    max-width: calc(50% - 20px);
   }
-  
-  
+
   .timeline--line-horizontal {
-    width: calc(100% - 42px); /* Adjust this value based on icon width */
-    height: 4px;
-    background-color: var(--secondary);
-    position: absolute;
-    top: calc(50% - 100px); /* Adjust this value to center the line vertically */
-    left: 58%;
-    /* transform: translateX(-40%); */
+   display: none;
   }
-  
-  
-  
-  
-  .institution-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    border: 4px solid var(--secondary);
-    padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .education--timeline--item {
+    flex: 1 0 calc(100% - 20px); /* Full width for mobile devices */
+    max-width: calc(100% - 20px);
   }
-  
-  .education--details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  .timeline--line-horizontal {
+    display: none;
+
   }
-  
+}
+
+@media (max-width: 480px) {
+  .education--timeline {
+    margin-top: 50px; /* Reduce margin for small screens */
+  }
+
+  .education--timeline--item {
+    flex: 1 0 calc(100% - 10px); /* Full width for very small devices */
+    max-width: calc(100% - 10px);
+  }
+
+  .timeline--line-horizontal {
+    display: none;
+
+  }
+
   .education--institution--name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
+    font-size: 18px;
   }
-  
-  .education--degree {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 5px;
-  }
-  
+
+  .education--degree,
   .education--duration {
-    font-size: 16px;
-    color: #999;
+    font-size: 14px;
   }
-  
+}
